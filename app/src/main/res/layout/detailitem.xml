@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@drawable/bgdetail"
+    android:layout_height="match_parent"
+    >
+
+    <ImageView
+        android:id="@+id/img_detail_item"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:src="@drawable/item"
+        android:scaleType="centerCrop"/>
+    <TextView
+        android:id="@+id/txt_ten_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ếch xào sả ớt"
+        android:gravity="center"
+        android:textAllCaps="true"
+        android:layout_gravity="center"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="35dp"
+        />
+    <TextView
+        android:id="@+id/txt_gia_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="399.000đ"
+        android:textSize="30dp"
+        android:textStyle="italic"/>
+
+    <ImageView
+        android:layout_width="180dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:scaleType="fitCenter"
+        android:src="@drawable/fivestar"/>
+
+    <Button
+        android:id="@+id/btn_back_to_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="#00FFFFFF"
+        android:text="Back to menu" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:paddingLeft="20dp"
+            android:text="Nguyên liệu:  "
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="22dp"/>
+
+        <TextView
+            android:id="@+id/txt_nguyenlieu_item"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ếch, sả, ớt, tỏi, hành tím, nước mắm, muối, đường, tiêu, dầu ăn."
+            android:textColor="@color/black"
+            android:textSize="22dp" />
+    </LinearLayout>
+
+</LinearLayout>
