@@ -7,6 +7,7 @@ import android.app.Dialog;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.Menu;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
@@ -46,11 +47,11 @@ public class LoginResActivity extends AppCompatActivity {
                 String str2 = mk.getText().toString().trim();
                 if (!str1.isEmpty() || !str2.isEmpty()) {
                     if(str1.equals(taikhoan) && str2.equals(matkhau)){
-                        Intent intent1 = new Intent(LoginResActivity.this, MainActivity.class);
+                        Intent intent1 = new Intent(LoginResActivity.this, Menu_page.class);
                         startActivity(intent1);
                         Toast.makeText(LoginResActivity.this, "Welcome back, " + str1, Toast.LENGTH_SHORT).show();
                     }else if(str1.equals("sangthuanhung") && str2.equals("1")){
-                        Intent intent2 = new Intent(LoginResActivity.this, MainActivity.class);
+                        Intent intent2 = new Intent(LoginResActivity.this, Menu_page.class);
                         startActivity(intent2);
                         Toast.makeText(LoginResActivity.this, "Welcome back, " + str1, Toast.LENGTH_SHORT).show();
                     }else {
