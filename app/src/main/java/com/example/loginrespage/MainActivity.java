@@ -32,6 +32,8 @@ import android.widget.ProgressBar;
 import android.widget.RelativeLayout;
 import android.widget.ScrollView;
 
+
+
 import androidx.annotation.NonNull;
 import androidx.core.app.ActivityCompat;
 
@@ -43,6 +45,8 @@ import jp.tagcast.bleservice.TGCState;
 import jp.tagcast.bleservice.TGCType;
 import jp.tagcast.bleservice.TagCast;
 import jp.tagcast.helper.TGCAdapter;
+
+
 
 public class MainActivity extends Activity implements ActivityCompat.OnRequestPermissionsResultCallback {
 
@@ -584,10 +588,12 @@ public class MainActivity extends Activity implements ActivityCompat.OnRequestPe
                 @Override
                 public void onClick(final View v) {
                     onDismiss(getDialog());
+
                     Intent intent = new Intent(activity, MainActivity.class);
                     intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                     activity.startActivity(intent);
                     activity.overridePendingTransition(R.anim.no_animation_d100, R.anim.no_animation_d100);
+
                 }
             });
 
@@ -602,6 +608,7 @@ public class MainActivity extends Activity implements ActivityCompat.OnRequestPe
             lp.width = ViewGroup.LayoutParams.MATCH_PARENT;
             lp.height = ViewGroup.LayoutParams.MATCH_PARENT;
             dialog.getWindow().setAttributes(lp);
+
         }
 
         @NonNull
@@ -676,5 +683,8 @@ public class MainActivity extends Activity implements ActivityCompat.OnRequestPe
             }
         }
     }
+
+
+
 
 }
